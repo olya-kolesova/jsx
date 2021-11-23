@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-  return <div>
-    <label class="label" htmlFor="">Enter name:</label>
-    <input id="name" type="text" />
-    <button style="background-color: blue; color: white;">Submit</button>
-  </div>;
+  return (
+    <div>
+      <label class="label" htmlFor="">Enter name:</label>
+      <input id="name" type="text" />
+      <button style={{backgroundColor: "blue", color: "white"}}>Submit</button>
+    </div>
+  );
 };
 
 ReactDOM.render(<App/>, document.querySelector('#root'));
